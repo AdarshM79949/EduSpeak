@@ -116,6 +116,8 @@ export default function LandingPage() {
                   text="EduSpeak combines interactive lessons, speech recognition technology, and personalized feedback to help you achieve fluency faster than ever before."
                   disabled={false}
                   speed={3}
+                  color="#4a5568"
+                  shineColor="#1a202c"
                   className="text-[#2d3748]"
                 />
               </p>
@@ -389,8 +391,8 @@ export default function LandingPage() {
               </p>
             </div>
           </div>
-          <div className="border-t pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 EduSpeak. All rights reserved. Built with passion at MGM Technological Campus.</p>
+          <div className="border-t pt-8 text-center text-sm text-[#4a5568]">
+            <p>&copy; 2026 EduSpeak. All rights reserved. Built with passion at MGM Technological Campus.</p>
           </div>
         </div>
       </footer>
