@@ -1,3 +1,4 @@
+"use client";
 import { Renderer, Program, Mesh, Triangle } from 'ogl';
 import { useEffect, useRef } from 'react';
 
@@ -223,3 +224,4 @@ export default function Balatro({
 
   return <div ref={containerRef} className="w-full h-full" />;
 }
+

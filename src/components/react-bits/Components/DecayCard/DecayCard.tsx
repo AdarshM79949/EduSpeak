@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, ReactNode } from 'react';
 import { gsap } from 'gsap';
 
@@ -158,3 +159,4 @@ const DecayCard: React.FC<DecayCardProps> = ({
 };
 
 export default DecayCard;
+

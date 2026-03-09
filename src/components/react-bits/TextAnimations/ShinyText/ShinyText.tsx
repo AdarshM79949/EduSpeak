@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { motion, useMotionValue, useAnimationFrame, useTransform } from 'motion/react';
 
@@ -131,3 +132,4 @@ const ShinyText: React.FC<ShinyTextProps> = ({
 export default ShinyText;
 //   plugins: [],
 // };
+

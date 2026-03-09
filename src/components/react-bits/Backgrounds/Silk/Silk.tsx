@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable react/no-unknown-property */
 import React, { forwardRef, useMemo, useRef, useLayoutEffect } from 'react';
 import { Canvas, useFrame, useThree, RootState } from '@react-three/fiber';
@@ -149,3 +150,4 @@ const Silk: React.FC<SilkProps> = ({ speed = 5, scale = 1, color = '#7B7481', no
 };
 
 export default Silk;
+

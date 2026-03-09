@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from 'react';
 
 interface FuzzyTextProps {
@@ -330,3 +331,4 @@ const FuzzyText: React.FC<FuzzyTextProps> = ({
 };
 
 export default FuzzyText;
+

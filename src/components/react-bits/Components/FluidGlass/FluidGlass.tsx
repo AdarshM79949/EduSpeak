@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable react/no-unknown-property */
 import * as THREE from 'three';
 import { useRef, useState, useEffect, memo, ReactNode } from 'react';
@@ -318,3 +319,4 @@ function Typography() {
     </Text>
   );
 }
+

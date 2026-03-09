@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useState } from 'react';
 
 interface Position {
@@ -68,3 +69,4 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
 };
 
 export default SpotlightCard;
+

@@ -1,3 +1,4 @@
+"use client";
 import React, { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 
@@ -582,3 +583,4 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 };
 
 export default StaggeredMenu;
+

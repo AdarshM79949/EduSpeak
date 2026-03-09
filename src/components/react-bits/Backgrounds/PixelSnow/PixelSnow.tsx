@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useRef, useMemo, useCallback } from 'react';
 import {
   Scene,
@@ -373,3 +374,4 @@ export default function PixelSnow({
     />
   );
 }
+

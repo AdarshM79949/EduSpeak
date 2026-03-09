@@ -1,3 +1,4 @@
+"use client";
 import { useRef, useEffect } from 'react';
 
 const LetterGlitch = ({
@@ -228,3 +229,4 @@ const LetterGlitch = ({
 };
 
 export default LetterGlitch;
+

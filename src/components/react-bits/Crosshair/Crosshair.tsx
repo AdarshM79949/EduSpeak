@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, RefObject } from 'react';
 import { gsap } from 'gsap';
 
@@ -183,3 +184,4 @@ const Crosshair: React.FC<CrosshairProps> = ({ color = 'white', containerRef = n
 };
 
 export default Crosshair;
+

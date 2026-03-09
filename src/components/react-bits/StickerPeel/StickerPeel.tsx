@@ -1,3 +1,4 @@
+"use client";
 import { useRef, useEffect, useMemo, CSSProperties } from 'react';
 import { gsap } from 'gsap';
 import { Draggable } from 'gsap/Draggable';
@@ -385,3 +386,4 @@ const StickerPeel: React.FC<StickerPeelProps> = ({
 };
 
 export default StickerPeel;
+

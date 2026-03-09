@@ -1,3 +1,4 @@
+"use client";
 export const hyperspeedPresets = {
   one: {
     onSpeedUp: () => {},
@@ -223,3 +224,4 @@ export const hyperspeedPresets = {
     }
   }
 };
+

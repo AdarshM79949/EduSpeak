@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useEffect } from 'react';
 
 type CanvasStrokeStyle = string | CanvasGradient | CanvasPattern;
@@ -153,3 +154,4 @@ const Squares: React.FC<SquaresProps> = ({
 };
 
 export default Squares;
+

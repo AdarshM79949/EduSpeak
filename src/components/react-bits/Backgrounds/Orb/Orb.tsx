@@ -1,3 +1,4 @@
+"use client";
 import { Mesh, Program, Renderer, Triangle, Vec3 } from 'ogl';
 import { useEffect, useRef } from 'react';
 
@@ -346,3 +347,4 @@ function hexToVec3(color: string) {
 
   return new Vec3(0, 0, 0);
 }
+

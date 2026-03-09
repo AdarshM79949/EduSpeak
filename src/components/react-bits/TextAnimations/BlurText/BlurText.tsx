@@ -1,3 +1,4 @@
+"use client";
 import { motion } from 'motion/react';
 import type { Transition } from 'motion/react';
 
@@ -124,3 +125,4 @@ const BlurText: React.FC<BlurTextProps> = ({
 };
 
 export default BlurText;
+

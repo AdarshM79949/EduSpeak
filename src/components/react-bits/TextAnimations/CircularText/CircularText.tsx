@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from 'react';
 import { motion, useAnimation, useMotionValue, MotionValue, Transition } from 'motion/react';
 interface CircularTextProps {
@@ -120,3 +121,4 @@ const CircularText: React.FC<CircularTextProps> = ({
 };
 
 export default CircularText;
+

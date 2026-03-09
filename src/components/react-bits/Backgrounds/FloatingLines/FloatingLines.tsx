@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useRef } from 'react';
 import {
   Scene,
@@ -499,3 +500,4 @@ export default function FloatingLines({
     />
   );
 }
+

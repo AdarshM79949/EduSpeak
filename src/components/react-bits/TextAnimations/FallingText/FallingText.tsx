@@ -1,3 +1,4 @@
+"use client";
 import { useRef, useState, useEffect } from 'react';
 import Matter from 'matter-js';
 
@@ -199,3 +200,4 @@ const FallingText: React.FC<FallingTextProps> = ({
 };
 
 export default FallingText;
+

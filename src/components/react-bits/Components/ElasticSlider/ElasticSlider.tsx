@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, useState } from 'react';
 import { animate, motion, useMotionValue, useMotionValueEvent, useTransform } from 'motion/react';
 
@@ -205,3 +206,4 @@ function decay(value: number, max: number): number {
 }
 
 export default ElasticSlider;
+

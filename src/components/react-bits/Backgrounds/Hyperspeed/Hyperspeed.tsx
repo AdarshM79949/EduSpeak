@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useRef, FC } from 'react';
 import * as THREE from 'three';
 import { BloomEffect, EffectComposer, EffectPass, RenderPass, SMAAEffect, SMAAPreset } from 'postprocessing';
@@ -1256,3 +1257,4 @@ const Hyperspeed: FC<HyperspeedProps> = ({ effectOptions = DEFAULT_EFFECT_OPTION
 };
 
 export default Hyperspeed;
+

@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useEffect } from 'react';
 
 interface NoiseProps {
@@ -83,3 +84,4 @@ const Noise: React.FC<NoiseProps> = ({
 };
 
 export default Noise;
+

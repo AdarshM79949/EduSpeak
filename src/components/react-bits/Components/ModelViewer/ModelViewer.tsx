@@ -1,3 +1,4 @@
+"use client";
 import { FC, Suspense, useRef, useLayoutEffect, useEffect, useMemo } from 'react';
 import { Canvas, useFrame, useLoader, useThree, invalidate } from '@react-three/fiber';
 import { OrbitControls, useGLTF, useFBX, useProgress, Html, Environment, ContactShadows } from '@react-three/drei';
@@ -513,3 +514,4 @@ const ModelViewer: FC<ViewerProps> = ({
 };
 
 export default ModelViewer;
+

@@ -1,3 +1,4 @@
+"use client";
 // Component ported from https://codepen.io/JuanFuentes/full/rgXKGQ
 
 import { useEffect, useRef, useState, useMemo, useCallback } from 'react';
@@ -237,3 +238,4 @@ const TextPressure: React.FC<TextPressureProps> = ({
 };
 
 export default TextPressure;
+

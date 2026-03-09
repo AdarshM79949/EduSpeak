@@ -1,3 +1,4 @@
+"use client";
 import React, { forwardRef, useCallback, useEffect, useImperativeHandle, useMemo, useState } from 'react';
 import {
   motion,
@@ -230,3 +231,4 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
 
 RotatingText.displayName = 'RotatingText';
 export default RotatingText;
+

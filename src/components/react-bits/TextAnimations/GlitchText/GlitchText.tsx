@@ -1,3 +1,4 @@
+"use client";
 import { FC, CSSProperties } from 'react';
 
 interface GlitchTextProps {
@@ -87,3 +88,4 @@ export default GlitchText;
 //   },
 //   plugins: [],
 // };
+

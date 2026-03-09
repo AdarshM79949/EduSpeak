@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable react/no-unknown-property */
 'use client';
 import { useEffect, useRef, useState } from 'react';
@@ -242,3 +243,4 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }: BandProps) {
     </>
   );
 }
+

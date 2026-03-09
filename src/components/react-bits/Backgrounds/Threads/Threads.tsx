@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from 'react';
 import { Renderer, Program, Mesh, Triangle, Color } from 'ogl';
 
@@ -226,3 +227,4 @@ const Threads: React.FC<ThreadsProps> = ({
 };
 
 export default Threads;
+

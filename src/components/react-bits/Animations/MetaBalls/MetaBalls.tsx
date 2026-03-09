@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from 'react';
 import { Renderer, Program, Mesh, Triangle, Transform, Vec3, Camera } from 'ogl';
 
@@ -299,3 +300,4 @@ const MetaBalls: React.FC<MetaBallsProps> = ({
 };
 
 export default MetaBalls;
+

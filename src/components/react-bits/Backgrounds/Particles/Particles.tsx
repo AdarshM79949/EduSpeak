@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from 'react';
 import { Renderer, Camera, Geometry, Program, Mesh } from 'ogl';
 
@@ -253,3 +254,4 @@ const Particles: React.FC<ParticlesProps> = ({
 };
 
 export default Particles;
+

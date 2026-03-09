@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef } from 'react';
 
 interface GlareHoverProps {
@@ -106,3 +107,4 @@ const GlareHover: React.FC<GlareHoverProps> = ({
 };
 
 export default GlareHover;
+

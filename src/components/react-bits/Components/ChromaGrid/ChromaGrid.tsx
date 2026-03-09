@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 
@@ -223,3 +224,4 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
 };
 
 export default ChromaGrid;
+

@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
@@ -306,3 +307,4 @@ export default function ColorBends({
 
   return <div ref={containerRef} className={`w-full h-full relative overflow-hidden ${className}`} style={style} />;
 }
+

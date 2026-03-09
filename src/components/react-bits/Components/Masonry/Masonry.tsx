@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 
@@ -240,3 +241,4 @@ const Masonry: React.FC<MasonryProps> = ({
 };
 
 export default Masonry;
+

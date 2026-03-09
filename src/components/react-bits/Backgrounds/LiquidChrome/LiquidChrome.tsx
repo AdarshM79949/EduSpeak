@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useEffect } from 'react';
 import { Renderer, Program, Mesh, Triangle } from 'ogl';
 
@@ -166,3 +167,4 @@ export const LiquidChrome: React.FC<LiquidChromeProps> = ({
 };
 
 export default LiquidChrome;
+

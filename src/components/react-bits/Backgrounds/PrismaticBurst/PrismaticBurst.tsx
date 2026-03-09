@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from 'react';
 import { Renderer, Program, Mesh, Triangle, Texture } from 'ogl';
 
@@ -458,3 +459,4 @@ const PrismaticBurst = ({
 };
 
 export default PrismaticBurst;
+

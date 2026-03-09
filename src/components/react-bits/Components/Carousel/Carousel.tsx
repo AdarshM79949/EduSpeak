@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, PanInfo, useMotionValue, useTransform } from 'motion/react';
 import React, { JSX } from 'react';
@@ -302,3 +303,4 @@ export default function Carousel({
     </div>
   );
 }
+

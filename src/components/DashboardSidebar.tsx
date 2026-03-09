@@ -1,3 +1,4 @@
+"use client";
 import { NavLink } from 'react-router-dom';
 import { 
   LayoutDashboard, 
@@ -88,3 +89,4 @@ export default function DashboardSidebar({ userRole }: DashboardSidebarProps) {
     </aside>
   );
 }
+

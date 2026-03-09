@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
@@ -254,8 +255,7 @@ const PillNav: React.FC<PillNavProps> = ({
         style={cssVars}
       >
         {isRouterLink(items?.[0]?.href) ? (
-          <Link
-            to={items[0].href}
+          <={items[0].href}
             aria-label="Home"
             onMouseEnter={handleLogoEnter}
             role="menuitem"
@@ -360,9 +360,7 @@ const PillNav: React.FC<PillNavProps> = ({
               return (
                 <li key={item.href} role="none" className="flex h-full">
                   {isRouterLink(item.href) ? (
-                    <Link
-                      role="menuitem"
-                      to={item.href}
+                    <={item.href}
                       className={basePillClasses}
                       style={pillStyle}
                       aria-label={item.ariaLabel || item.label}
@@ -442,8 +440,7 @@ const PillNav: React.FC<PillNavProps> = ({
             return (
               <li key={item.href}>
                 {isRouterLink(item.href) ? (
-                  <Link
-                    to={item.href}
+                  <={item.href}
                     className={linkClasses}
                     style={defaultStyle}
                     onMouseEnter={hoverIn}
@@ -474,3 +471,4 @@ const PillNav: React.FC<PillNavProps> = ({
 };
 
 export default PillNav;
+

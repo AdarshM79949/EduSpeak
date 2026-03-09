@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useEffect, useCallback } from 'react';
 
 interface ClickSparkProps {
@@ -159,3 +160,4 @@ const ClickSpark: React.FC<ClickSparkProps> = ({
 };
 
 export default ClickSpark;
+

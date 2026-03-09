@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, useCallback, useMemo, useState } from 'react';
 
 const DEFAULT_INNER_GRADIENT = 'linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)';
@@ -645,3 +646,4 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
 
 const ProfileCard = React.memo(ProfileCardComponent);
 export default ProfileCard;
+

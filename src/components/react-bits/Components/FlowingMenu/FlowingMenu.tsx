@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 
@@ -185,3 +186,4 @@ const MenuItem: React.FC<MenuItemProps> = ({
 };
 
 export default FlowingMenu;
+

@@ -1,3 +1,4 @@
+"use client";
 import { FC, useRef, useState, useEffect, MutableRefObject } from 'react';
 import { mat4, quat, vec2, vec3 } from 'gl-matrix';
 
@@ -1192,3 +1193,4 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [], scale = 1.0 }) => {
 };
 
 export default InfiniteMenu;
+

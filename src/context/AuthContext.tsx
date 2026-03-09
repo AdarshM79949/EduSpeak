@@ -1,5 +1,6 @@
+"use client";
 import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import type { User, UserRole } from '@/types';
 
 interface AuthContextType {
@@ -44,7 +45,7 @@ const MOCK_USERS: User[] = [
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const navigate = useNavigate();
+  const router = useRouter();
 
   useEffect(() => {
     // Check for saved session
@@ -94,7 +95,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const logout = () => {
     setUser(null);
     localStorage.removeItem('eduspeak_user');
-    navigate('/');
+    router.push('/');
   };
 
   const forgotPassword = async (_email: string): Promise<boolean> => {
@@ -116,3 +117,4 @@ export function useAuth() {
   }
   return context;
 }
+

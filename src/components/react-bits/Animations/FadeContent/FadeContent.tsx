@@ -1,3 +1,4 @@
+"use client";
 import * as React from 'react';
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
@@ -107,3 +108,4 @@ const FadeContent: React.FC<FadeContentProps> = ({
 };
 
 export default FadeContent;
+

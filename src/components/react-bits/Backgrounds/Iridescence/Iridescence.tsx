@@ -1,3 +1,4 @@
+"use client";
 import { Renderer, Program, Mesh, Color, Triangle } from 'ogl';
 import { useEffect, useRef } from 'react';
 
@@ -136,3 +137,4 @@ export default function Iridescence({
 
   return <div ref={ctnDom} className="w-full h-full" {...rest} />;
 }
+

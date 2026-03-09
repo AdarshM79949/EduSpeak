@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react"
 import * as AvatarPrimitive from "@radix-ui/react-avatar"
 
@@ -49,3 +50,4 @@ function AvatarFallback({
 }
 
 export { Avatar, AvatarImage, AvatarFallback }
+

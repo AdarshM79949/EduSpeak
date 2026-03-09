@@ -1,3 +1,4 @@
+"use client";
 import React, { useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 // use your own icon import if react-icons is not available
@@ -236,3 +237,4 @@ const CardNav: React.FC<CardNavProps> = ({
 };
 
 export default CardNav;
+

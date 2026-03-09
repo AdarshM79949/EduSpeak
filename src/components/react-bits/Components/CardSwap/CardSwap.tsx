@@ -1,3 +1,4 @@
+"use client";
 import React, {
   Children,
   cloneElement,
@@ -218,3 +219,4 @@ const CardSwap: React.FC<CardSwapProps> = ({
 };
 
 export default CardSwap;
+

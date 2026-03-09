@@ -1,3 +1,4 @@
+"use client";
 import { useRef, useEffect, useState, useMemo, useId, FC, PointerEvent } from 'react';
 
 interface CurvedLoopProps {
@@ -139,3 +140,4 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
 };
 
 export default CurvedLoop;
+

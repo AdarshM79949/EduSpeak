@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { SplitText } from 'gsap/SplitText';
@@ -83,3 +84,4 @@ const ScrambledText: React.FC<ScrambledTextProps> = ({
 };
 
 export default ScrambledText;
+

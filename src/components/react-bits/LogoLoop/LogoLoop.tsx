@@ -1,3 +1,4 @@
+"use client";
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 export type LogoItem =
@@ -495,3 +496,4 @@ export const LogoLoop = React.memo<LogoLoopProps>(
 LogoLoop.displayName = 'LogoLoop';
 
 export default LogoLoop;
+

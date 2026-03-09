@@ -1,3 +1,4 @@
+"use client";
 import React, { useCallback, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
@@ -374,3 +375,4 @@ const Cubes: React.FC<CubesProps> = ({
 };
 
 export default Cubes;
+

@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 
@@ -280,3 +281,4 @@ const GridDistortion: React.FC<GridDistortionProps> = ({
 };
 
 export default GridDistortion;
+

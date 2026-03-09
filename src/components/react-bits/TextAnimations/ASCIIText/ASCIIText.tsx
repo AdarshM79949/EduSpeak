@@ -1,3 +1,4 @@
+"use client";
 // Component ported and enhanced from https://codepen.io/JuanFuentes/pen/eYEeoyE
 
 import { useRef, useEffect } from 'react';
@@ -616,3 +617,4 @@ export default function ASCIIText({
     </div>
   );
 }
+

@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
@@ -1246,3 +1247,4 @@ export default function LiquidEther({
     />
   );
 }
+

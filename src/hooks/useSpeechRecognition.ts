@@ -1,3 +1,4 @@
+"use client";
 import { useState, useRef, useCallback, useEffect } from 'react';
 
 interface UseSpeechRecognitionReturn {
@@ -138,3 +139,4 @@ export function useSpeechRecognition(): UseSpeechRecognitionReturn {
     supported,
   };
 }
+

@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState, useRef, useMemo, useCallback } from 'react';
 import { motion } from 'motion/react';
 import type { HTMLMotionProps } from 'motion/react';
@@ -385,3 +386,4 @@ export default function DecryptedText({
     </motion.span>
   );
 }
+

@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 
 export interface GlassIconsItem {
@@ -69,3 +70,4 @@ const GlassIcons: React.FC<GlassIconsProps> = ({ items, className }) => {
 };
 
 export default GlassIcons;
+

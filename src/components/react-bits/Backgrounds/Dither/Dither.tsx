@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable react/no-unknown-property */
 import { useRef, useState, useEffect, forwardRef } from 'react';
 import { Canvas, useFrame, useThree, ThreeEvent } from '@react-three/fiber';
@@ -330,3 +331,4 @@ export default function Dither({
     </Canvas>
   );
 }
+

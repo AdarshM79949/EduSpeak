@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from 'react';
 import { Renderer, Transform, Vec3, Color, Polyline } from 'ogl';
 
@@ -262,3 +263,4 @@ const Ribbons: React.FC<RibbonsProps> = ({
 };
 
 export default Ribbons;
+

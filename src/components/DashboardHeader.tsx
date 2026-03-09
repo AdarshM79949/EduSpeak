@@ -1,6 +1,7 @@
+"use client";
 import { useAuth } from '@/context/AuthContext';
 import { Bell, GraduationCap, User } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import {
@@ -40,7 +41,7 @@ export default function DashboardHeader() {
   return (
     <header className="fixed top-0 left-0 right-0 h-16 bg-white border-b z-50">
       <div className="h-full px-6 flex items-center justify-between">
-        <Link to={getDashboardLink()} className="flex items-center space-x-2">
+        <={getDashboardLink()} className="flex items-center space-x-2">
           <GraduationCap className="h-8 w-8 text-primary" />
           <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
             EduSpeak
@@ -97,3 +98,4 @@ export default function DashboardHeader() {
 }
 
 import { Settings, LogOut } from 'lucide-react';
+

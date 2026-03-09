@@ -1,3 +1,4 @@
+"use client";
 import { gsap } from 'gsap';
 import { JSX, useEffect, useRef } from 'react';
 
@@ -1214,3 +1215,4 @@ export default function ImageTrail({ items = [], variant = 1 }: ImageTrailProps)
     </div>
   );
 }
+

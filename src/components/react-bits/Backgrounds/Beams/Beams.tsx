@@ -1,3 +1,4 @@
+"use client";
 import { forwardRef, useImperativeHandle, useEffect, useRef, useMemo, FC, ReactNode } from 'react';
 
 import * as THREE from 'three';
@@ -370,3 +371,4 @@ const DirLight: FC<{ position: [number, number, number]; color: string }> = ({ p
 };
 
 export default Beams;
+

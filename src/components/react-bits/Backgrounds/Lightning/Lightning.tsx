@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useEffect } from 'react';
 
 interface LightningProps {
@@ -186,3 +187,4 @@ const Lightning: React.FC<LightningProps> = ({ hue = 230, xOffset = 0, speed = 1
 };
 
 export default Lightning;
+

@@ -1,3 +1,4 @@
+"use client";
 import { Renderer, Program, Mesh, Color, Triangle } from 'ogl';
 import React, { useEffect, useRef, useMemo, useCallback } from 'react';
 
@@ -422,3 +423,4 @@ export default function FaultyTerminal({
     <div ref={containerRef} className={`w-full h-full relative overflow-hidden ${className}`} style={style} {...rest} />
   );
 }
+

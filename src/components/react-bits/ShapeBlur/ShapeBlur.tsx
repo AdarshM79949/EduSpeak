@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useEffect, FC } from 'react';
 import * as THREE from 'three';
 
@@ -256,3 +257,4 @@ const ShapeBlur: FC<ShapeBlurProps> = ({
 };
 
 export default ShapeBlur;
+

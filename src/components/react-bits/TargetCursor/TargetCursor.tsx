@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, useCallback, useMemo } from 'react';
 import { gsap } from 'gsap';
 
@@ -311,3 +312,4 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
 };
 
 export default TargetCursor;
+

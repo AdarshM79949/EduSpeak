@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useRef } from 'react';
 import { JSX } from 'react';
 
@@ -296,3 +297,4 @@ export default function PixelCard({
     </div>
   );
 }
+

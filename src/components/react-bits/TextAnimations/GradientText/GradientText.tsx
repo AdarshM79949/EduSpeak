@@ -1,3 +1,4 @@
+"use client";
 import { useState, useCallback, useEffect, useRef, ReactNode } from 'react';
 import { motion, useMotionValue, useAnimationFrame, useTransform } from 'motion/react';
 
@@ -126,3 +127,4 @@ export default function GradientText({
     </motion.div>
   );
 }
+

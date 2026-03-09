@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from 'react';
 import { Renderer, Program, Mesh, Triangle } from 'ogl';
 
@@ -264,3 +265,4 @@ const Grainient: React.FC<GrainientProps> = ({
 };
 
 export default Grainient;
+

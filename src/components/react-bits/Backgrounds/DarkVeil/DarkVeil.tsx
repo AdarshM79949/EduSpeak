@@ -1,3 +1,4 @@
+"use client";
 import { useRef, useEffect } from 'react';
 import { Renderer, Program, Mesh, Triangle, Vec2 } from 'ogl';
 
@@ -154,3 +155,4 @@ export default function DarkVeil({
   }, [hueShift, noiseIntensity, scanlineIntensity, speed, scanlineFrequency, warpAmount, resolutionScale]);
   return <canvas ref={ref} className="w-full h-full block" />;
 }
+

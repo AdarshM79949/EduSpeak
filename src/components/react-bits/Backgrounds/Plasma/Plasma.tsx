@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from 'react';
 import { Renderer, Program, Mesh, Triangle } from 'ogl';
 
@@ -206,3 +207,4 @@ export const Plasma: React.FC<PlasmaProps> = ({
 };
 
 export default Plasma;
+

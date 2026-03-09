@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useRef, FC, ReactNode } from 'react';
 import { gsap } from 'gsap';
 
@@ -97,3 +98,4 @@ const GridMotion: FC<GridMotionProps> = ({ items = [], gradientColor = 'black' }
 };
 
 export default GridMotion;
+

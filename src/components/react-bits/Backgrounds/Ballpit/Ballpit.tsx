@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useEffect } from 'react';
 import {
   Clock,
@@ -871,3 +872,4 @@ const Ballpit: React.FC<BallpitProps> = ({ className = '', followCursor = true, 
 };
 
 export default Ballpit;
+

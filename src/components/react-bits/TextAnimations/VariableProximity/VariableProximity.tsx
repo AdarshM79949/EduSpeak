@@ -1,3 +1,4 @@
+"use client";
 import { forwardRef, useMemo, useRef, useEffect, MutableRefObject, CSSProperties, HTMLAttributes } from 'react';
 import { motion } from 'motion/react';
 
@@ -198,3 +199,4 @@ const VariableProximity = forwardRef<HTMLSpanElement, VariableProximityProps>((p
 
 VariableProximity.displayName = 'VariableProximity';
 export default VariableProximity;
+

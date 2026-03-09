@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'motion/react';
 
@@ -167,3 +168,4 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
 };
 
 export default TrueFocus;
+
