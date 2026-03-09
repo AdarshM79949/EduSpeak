@@ -41,12 +41,12 @@ import NotFoundPage from '@/pages/NotFoundPage';
 import type { UserRole } from '@/types';
 
 // Protected Route Component
-function ProtectedRoute({ 
-  children, 
-  allowedRoles 
-}: { 
-  children: React.ReactNode; 
-  allowedRoles?: UserRole[] 
+function ProtectedRoute({
+  children,
+  allowedRoles
+}: {
+  children: React.ReactNode;
+  allowedRoles?: UserRole[]
 }) {
   const { user, isLoading } = useAuth();
 
@@ -106,145 +106,145 @@ function AppRoutes() {
 
       {/* Student Routes */}
       <Route element={<DashboardLayout />}>
-        <Route 
-          path="/student/dashboard" 
+        <Route
+          path="/student/dashboard"
           element={
             <ProtectedRoute allowedRoles={['student']}>
               <StudentDashboard />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/student/lessons" 
+        <Route
+          path="/student/lessons"
           element={
             <ProtectedRoute allowedRoles={['student']}>
               <LessonLibrary />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/student/lessons/:id" 
+        <Route
+          path="/student/lessons/:id"
           element={
             <ProtectedRoute allowedRoles={['student']}>
               <LessonPlayer />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/student/speaking" 
+        <Route
+          path="/student/speaking"
           element={
             <ProtectedRoute allowedRoles={['student']}>
               <SpeakingPractice />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/student/quiz" 
+        <Route
+          path="/student/quiz"
           element={
             <ProtectedRoute allowedRoles={['student']}>
               <QuizRoom />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/student/quiz/result" 
+        <Route
+          path="/student/quiz/result"
           element={
             <ProtectedRoute allowedRoles={['student']}>
               <QuizResult />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/student/progress" 
+        <Route
+          path="/student/progress"
           element={
             <ProtectedRoute allowedRoles={['student']}>
               <ProgressReport />
             </ProtectedRoute>
-          } 
+          }
         />
 
         {/* Teacher Routes */}
-        <Route 
-          path="/teacher/dashboard" 
+        <Route
+          path="/teacher/dashboard"
           element={
             <ProtectedRoute allowedRoles={['teacher']}>
               <TeacherDashboard />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/teacher/upload" 
+        <Route
+          path="/teacher/upload"
           element={
             <ProtectedRoute allowedRoles={['teacher']}>
               <UploadContent />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/teacher/classes" 
+        <Route
+          path="/teacher/classes"
           element={
             <ProtectedRoute allowedRoles={['teacher']}>
               <ClassManagement />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/teacher/grades" 
+        <Route
+          path="/teacher/grades"
           element={
             <ProtectedRoute allowedRoles={['teacher']}>
               <Gradebook />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/teacher/quiz/create" 
+        <Route
+          path="/teacher/quiz/create"
           element={
             <ProtectedRoute allowedRoles={['teacher']}>
               <QuizBuilder />
             </ProtectedRoute>
-          } 
+          }
         />
 
         {/* Admin Routes */}
-        <Route 
-          path="/admin" 
+        <Route
+          path="/admin"
           element={
             <ProtectedRoute allowedRoles={['admin']}>
               <AdminDashboard />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/admin/users" 
+        <Route
+          path="/admin/users"
           element={
             <ProtectedRoute allowedRoles={['admin']}>
               <UserManagement />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/admin/content" 
+        <Route
+          path="/admin/content"
           element={
             <ProtectedRoute allowedRoles={['admin']}>
               <ContentModeration />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/admin/analytics" 
+        <Route
+          path="/admin/analytics"
           element={
             <ProtectedRoute allowedRoles={['admin']}>
               <Analytics />
             </ProtectedRoute>
-          } 
+          }
         />
-        <Route 
-          path="/admin/settings" 
+        <Route
+          path="/admin/settings"
           element={
             <ProtectedRoute allowedRoles={['admin']}>
               <Settings />
             </ProtectedRoute>
-          } 
+          }
         />
       </Route>
 
@@ -256,12 +256,12 @@ function AppRoutes() {
 
 function App() {
   return (
-    <AuthProvider>
-      <Router>
+    <Router>
+      <AuthProvider>
         <AppRoutes />
         <Toaster position="top-right" richColors />
-      </Router>
-    </AuthProvider>
+      </AuthProvider>
+    </Router>
   );
 }
 
