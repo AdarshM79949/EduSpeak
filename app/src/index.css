@@ -4,9 +4,11 @@
 
 @layer base {
   :root {
-    --background: 179.5 54.6% 46.7%;
-    --foreground: 0 0% 100%;
-    --card: 0 0% 100%;
+    --background: 175.7 46.7% 88.2%;
+    /* Light Blue #D3EDEF */
+    --foreground: 240 10% 3.9%;
+    --card: 29 100% 95.9%;
+    /* Ambrosia Ivory #FFF4EA */
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
