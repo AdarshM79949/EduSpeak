@@ -57,7 +57,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setIsLoading(true);
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000));
-    
+
     const foundUser = MOCK_USERS.find(u => u.email === email);
     if (foundUser) {
       setUser(foundUser);
@@ -73,7 +73,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setIsLoading(true);
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000));
-    
+
     const newUser: User = {
       id: Date.now().toString(),
       name,
@@ -82,7 +82,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       avatar: `https://api.dicebear.com/7.x/avataaars/svg?seed=${email}`,
       createdAt: new Date(),
     };
-    
+
     setUser(newUser);
     localStorage.setItem('eduspeak_user', JSON.stringify(newUser));
     setIsLoading(false);
@@ -92,6 +92,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const logout = () => {
     setUser(null);
     localStorage.removeItem('eduspeak_user');
+    window.location.href = '/';
   };
 
   const forgotPassword = async (_email: string): Promise<boolean> => {
