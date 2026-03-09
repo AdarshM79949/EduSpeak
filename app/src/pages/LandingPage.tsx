@@ -103,7 +103,7 @@ export default function LandingPage() {
                   Trusted by 10,000+ learners worldwide
                 </GradientText>
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-[#1a202c]">
                 <BlurText
                   text="Master English with AI-Powered Learning"
                   delay={50}
@@ -111,11 +111,12 @@ export default function LandingPage() {
                   direction="top"
                 />
               </h1>
-              <p className="text-lg text-muted-foreground max-w-xl">
+              <p className="text-lg text-[#2d3748] max-w-xl">
                 <ShinyText
                   text="EduSpeak combines interactive lessons, speech recognition technology, and personalized feedback to help you achieve fluency faster than ever before."
                   disabled={false}
                   speed={3}
+                  className="text-[#2d3748]"
                 />
               </p>
               <div className="flex flex-wrap gap-4">
@@ -183,7 +184,7 @@ export default function LandingPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {statsList.map((stat, index) => (
               <div key={index} className="text-center">
-                <p className="flex justify-center items-center text-4xl font-bold text-primary">
+                <p className="flex justify-center items-center text-4xl font-bold text-teal-700">
                   <CountUp to={stat.value} duration={stat.duration} className="inline-block" />
                   <span>{stat.suffix}</span>
                 </p>
@@ -206,7 +207,7 @@ export default function LandingPage() {
                 revealDirection="center"
               />
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-[#2d3748] text-lg">
               Our comprehensive platform addresses all aspects of language learning with
               cutting-edge technology and proven teaching methods.
             </p>
@@ -215,11 +216,11 @@ export default function LandingPage() {
             {features.map((feature, index) => (
               <SpotlightCard key={index} className="group hover:shadow-lg transition-shadow bg-card p-0" spotlightColor="rgba(14, 165, 233, 0.15)">
                 <div className="p-6">
-                  <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                  <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
                     <feature.icon className="h-6 w-6 text-primary group-hover:text-white" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-muted-foreground text-sm">{feature.description}</p>
+                  <h3 className="text-lg font-semibold mb-2 text-[#1a202c]">{feature.title}</h3>
+                  <p className="text-[#4a5568] text-sm">{feature.description}</p>
                 </div>
               </SpotlightCard>
             ))}
@@ -231,24 +232,24 @@ export default function LandingPage() {
       <section className="py-24 bg-muted/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-4">How EduSpeak Works</h2>
-            <p className="text-muted-foreground text-lg">
+            <h2 className="text-3xl font-bold mb-4 text-[#1a202c]">How EduSpeak Works</h2>
+            <p className="text-[#4a5568] text-lg">
               Start your English learning journey in three simple steps
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {howItWorks.map((item, index) => (
               <div key={index} className="relative">
-                <div className="text-6xl font-bold text-primary/10 absolute -top-4 -left-2">
+                <div className="text-6xl font-bold text-primary/20 absolute -top-4 -left-2">
                   {item.step}
                 </div>
                 <div className="relative pt-8">
-                  <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                  <p className="text-muted-foreground">{item.description}</p>
+                  <h3 className="text-xl font-semibold mb-3 text-[#1a202c]">{item.title}</h3>
+                  <p className="text-[#4a5568]">{item.description}</p>
                 </div>
                 {index < howItWorks.length - 1 && (
                   <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                    <ArrowRight className="h-6 w-6 text-muted-foreground/30" />
+                    <ArrowRight className="h-6 w-6 text-[#718096]" />
                   </div>
                 )}
               </div>
@@ -270,12 +271,12 @@ export default function LandingPage() {
             </div>
             <div className="space-y-6">
               <h2 className="text-3xl font-bold">About the Project</h2>
-              <p className="text-muted-foreground">
+              <p className="text-[#4a5568]">
                 EduSpeak is developed as part of a systematic literature review on enhancing
                 online English teaching, conducted by Computer Science & Engineering students
                 at MGM Technological Campus under the guidance of Ramseena.
               </p>
-              <p className="text-muted-foreground">
+              <p className="text-[#4a5568]">
                 Our research identified five core challenges in online English education:
                 lack of interaction, technical barriers, difficulty teaching language skills,
                 limited engagement, and assessment issues. EduSpeak directly addresses each
@@ -286,28 +287,28 @@ export default function LandingPage() {
                   <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5" />
                   <div>
                     <p className="font-medium">Research-Based</p>
-                    <p className="text-sm text-muted-foreground">Built on academic findings</p>
+                    <p className="text-sm text-[#4a5568]">Built on academic findings</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5" />
                   <div>
                     <p className="font-medium">AI-Powered</p>
-                    <p className="text-sm text-muted-foreground">Speech recognition tech</p>
+                    <p className="text-sm text-[#4a5568]">Speech recognition tech</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5" />
                   <div>
                     <p className="font-medium">Personalized</p>
-                    <p className="text-sm text-muted-foreground">Adaptive learning paths</p>
+                    <p className="text-sm text-[#4a5568]">Adaptive learning paths</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5" />
                   <div>
                     <p className="font-medium">Collaborative</p>
-                    <p className="text-sm text-muted-foreground">Teacher-student interaction</p>
+                    <p className="text-sm text-[#4a5568]">Teacher-student interaction</p>
                   </div>
                 </div>
               </div>
@@ -317,24 +318,24 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-primary">
+      <section className="py-24 bg-[#BEE3F8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-bold text-[#1a202c] mb-4">
             Ready to Start Your English Journey?
           </h2>
-          <p className="text-primary-foreground/80 text-lg mb-8">
+          <p className="text-[#2d3748] text-lg mb-8">
             Join thousands of learners who have transformed their English skills with EduSpeak.
             Sign up today and get your first week free!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/register">
-              <Button size="lg" variant="secondary" className="group">
+              <Button size="lg" className="group bg-primary text-primary-foreground hover:bg-primary/90">
                 Create Free Account
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
             <Link to="/login">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
                 Already have an account?
               </Button>
             </Link>
